@@ -25,9 +25,9 @@ def main():
 	print arq2
 
 	for i in range(10000):
-		lista1.append(str(random.randint(-9999, 10000))+',')
+		lista2.append(str(random.randint(-9999, 10000))+',')
 
-	arq2.writelines(lista1)
+	arq2.writelines(lista2)
 	arq2.close()
 
 	#Popula lista com 100.000 elementos com valores de -99.999 ate 100.000
@@ -35,9 +35,9 @@ def main():
 	print arq3
 
 	for i in range(100000):
-		lista1.append(str(random.randint(-99999, 100000))+',')
+		lista3.append(str(random.randint(-99999, 100000))+',')
 
-	arq3.writelines(lista1)
+	arq3.writelines(lista3)
 	arq3.close()
 
 main()

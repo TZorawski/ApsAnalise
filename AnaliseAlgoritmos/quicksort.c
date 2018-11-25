@@ -30,11 +30,11 @@ void quickSort(int* v, int inicio, int fim){
     }
 }
 
-int main(){
-    int v[] = {1,4,1,2,5,15,10};
-    quickSort(v,0,6);
-    for(int i=0; i<7; i++)
-        printf("%d ",v[i]);
-
-    return 0;
-}
+//int main(){
+//    int v[] = {1,4,1,2,5,15,10};
+//    quickSort(v,0,6);
+//    for(int i=0; i<7; i++)
+//        printf("%d ",v[i]);
+//
+//    return 0;
+//}

@@ -6,7 +6,7 @@ void troca(int* v, int a, int b) {
 	v[b] = c;
 }
 
-void main() {
+void selction() {
 	int v[7] = {1, 3, 4, 2, 0, 4, -3};
 	int i, j, menor;
 	

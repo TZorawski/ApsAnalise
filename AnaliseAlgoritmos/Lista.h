@@ -2,7 +2,7 @@
 #define LISTA_H
 
 # include <iostream>
-# define iMaxListSize 32
+# define iMaxListSize 100050
 
 typedef int T;
 

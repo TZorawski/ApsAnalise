@@ -31,7 +31,7 @@ int Lista::getSize(void) const {
 
 int Lista::getData(int pos, T& elem) const {
     if (pos < 0 || pos >= iSize) {
-        cerr << "Posição inválida!!!" << endl;
+        cerr << "Posiï¿½ï¿½o invï¿½lida!!!" << endl;
     return 1;
     }
     elem = listData[pos];
@@ -40,7 +40,7 @@ int Lista::getData(int pos, T& elem) const {
 
 int Lista::setData(int pos, T& data) {
     if (pos < 0 || pos >= iSize) {
-        cerr << "Posição inválida!!!" << endl;
+        cerr << "Posiï¿½ï¿½o invï¿½lida!!!" << endl;
         return 1;
     }
     listData[pos] = data;
@@ -49,7 +49,7 @@ int Lista::setData(int pos, T& data) {
 
 int Lista::insert(const T& item) {
     if (iSize >= iMaxListSize) {
-        cerr << "O tamanho máximo da lista foi atingido!" << endl;
+        cerr << "O tamanho mï¿½ximo da lista foi atingido!" << endl;
         return 1;
     }
     listData[ iSize] = item;
@@ -218,21 +218,4 @@ void Lista::shellSort(void) {
 			listData[k] = aux;
 		}
 	}
-}
-
-int main() {
-	Lista l = Lista();
-	
-	l.insert(9);
-	l.insert(8);
-	l.insert(7);
-	l.insert(6);
-	l.insert(5);
-	l.insert(4);
-	
-	l.print();
-	
-	l.shellSort();
-	
-	l.print();
 }
