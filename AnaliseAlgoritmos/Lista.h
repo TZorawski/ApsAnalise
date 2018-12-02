@@ -2,7 +2,7 @@
 #define LISTA_H
 
 # include <iostream>
-# define iMaxListSize 100050
+# define iMaxListSize 100000
 
 typedef int T;
 
@@ -38,11 +38,28 @@ class Lista
         void print() const;
 
         //ordenacoes
-        void bubbleSort();
+        int bubbleSort();
+        int bubbleSortOtimizado();
         void shakerSort();
         void binaryInsertionSort();
-        void insertionSort();
+        int insertionSort();
         void shellSort();
+        int selectionSort();
+        int quickSort(int inicio, int fim, int *num_instrucoes);
+        void mergeSort(int p, int r, int *num_instrucoes);
+        int heapSort();
+        int binarySearch(int val, int menor, int maior);
+        int findSubListMax(int *e, int *d);
+        
+        
+        //Troca valores
+        void troca(int a, int b);
+        //Particiona vetor
+        int particiona(int inicio, int fim, int *num_instrucoes);
+        //Junta listas
+        void merge(int p, int m, int r, int *num_instrucoes);
+        //Leva maior valor para o raiz
+        void maxHeapfy(int n, int p, int *num_instrucoes);
 
     protected:
 
@@ -51,6 +68,7 @@ class Lista
         int listData[ iMaxListSize];
         //Número de objetos da lista
         int iSize;
+        
 
 };
 
