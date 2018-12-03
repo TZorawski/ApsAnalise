@@ -121,10 +121,10 @@ int main() {
 //    l2.mergeSort(0, l2.getSize()-1, &instm2);
 //    printf("Merge: %d - %f\n", instm2, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
     
-    tempo = clock();
-    int instm3;
-    l3.mergeSort(0, l3.getSize()-1, &instm3);
-    printf("Merge: %d - %f\n", instm3, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
+//    tempo = clock();
+//    int instm3;
+//    l3.mergeSort(0, l3.getSize()-1, &instm3);
+//    printf("Merge: %d - %f\n", instm3, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
 
     // HeapSort
 //    tempo = clock();
@@ -141,16 +141,19 @@ int main() {
     
     // Busca Binária
 //    tempo = clock();
-//    int instbb1 = l1.binarySearch(2000, 0, l1.getSize()-1);
-//    printf("Busca Binária de 2000: %d - %f\n", instbb1, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
+//    int instbs1;
+//    l1.binarySearch(2000, 0, l1.getSize()-1, &instbs1);
+//    printf("Busca Binária de 2000: %d - %f\n", instbs1, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
     
 //    tempo = clock();
-//    int instbb2 = l2.binarySearch(20000, 0, l2.getSize()-1);
-//    printf("Busca Binária de 20000: %d - %f\n", instbb2, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
+//    int instbs2;
+//    l2.binarySearch(20000, 0, l2.getSize()-1, &instbs2);
+//    printf("Busca Binária de 20000: %d - %f\n", instbs2, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
     
-//    tempo = clock();
-//    int instbb3 = l3.binarySearch(200000, 0, l3.getSize()-1);
-//    printf("Busca Binária de 200000: %d - %f\n", instbb3, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
+    tempo = clock();
+    int instbs3;
+    l3.binarySearch(2000, 0, l3.getSize()-1, &instbs3);
+    printf("Busca Binária de 200000: %d - %f\n", instbs3, ((clock() - tempo) / (double)CLOCKS_PER_SEC));
     
     // Busca SubArray Máximo
 //    tempo = clock();

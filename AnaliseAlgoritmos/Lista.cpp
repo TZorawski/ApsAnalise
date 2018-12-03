@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int Lista::binarySearch(int val, int menor, int maior) {
+int Lista::binarySearch(int val, int menor, int maior, int *num_instrucoes) {
+    *num_instrucoes += 1;
     if (maior <= menor)
         return (val > listData[menor])?  (menor + 1): menor;
  
@@ -13,8 +14,8 @@ int Lista::binarySearch(int val, int menor, int maior) {
         return meio+1;
  
     if(val > listData[meio])
-        return binarySearch(val, meio+1, maior);
-    return binarySearch(val, menor, meio-1);
+        return binarySearch(val, meio+1, maior, num_instrucoes);
+    return binarySearch(val, menor, meio-1, num_instrucoes);
 }
 
 Lista::Lista(void) {
@@ -194,7 +195,7 @@ void Lista::binaryInsertionSort(void) {
         j = i - 1;
         aux = listData[i];
         
-        loc = binarySearch(aux, 0, j);
+        loc = binarySearch(aux, 0, j, 0);
         
         while (j >= loc) {
             listData[j+1] = listData[j];

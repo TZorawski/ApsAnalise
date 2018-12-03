@@ -48,7 +48,7 @@ class Lista
         int quickSort(int inicio, int fim, int *num_instrucoes);
         void mergeSort(int p, int r, int *num_instrucoes);
         int heapSort();
-        int binarySearch(int val, int menor, int maior);
+        int binarySearch(int val, int menor, int maior, int *num_instrucoes);
         int findSubListMax(int *e, int *d);
         
         
