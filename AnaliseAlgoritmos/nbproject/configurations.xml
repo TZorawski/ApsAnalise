@@ -11,6 +11,7 @@
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
       <itemPath>Lista.cpp</itemPath>
+      <itemPath>luiz.c</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>quicksort.c</itemPath>
       <itemPath>selection.c</itemPath>
@@ -55,6 +56,8 @@
       </item>
       <item path="lista3.txt" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="luiz.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="quicksort.c" ex="false" tool="0" flavor2="0">
@@ -95,6 +98,8 @@
       <item path="lista2.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="lista3.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="luiz.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
